@@ -18,7 +18,7 @@ Here are some guides based on what others have been doing:
   icon: lucide:box
   target: _blank
   title: Proto-branch toolkit
-  to: https://docs.google.com/spreadsheets/d/1XlmtFKFj47QkXy6GmebIsmlTh5BPgt8VgiXkBdtnHNQ/edit?usp=sharing
+  to: https://docs.google.com/document/d/140PDgjsNPrpljV8TUCISyyl0RU2ejwi8i7AwWTkxuds/view?tab=t.0#heading=h.ohyvj6gnp42
   ---
   Roles, first meeting, decision-making, onboarding.
   :::
