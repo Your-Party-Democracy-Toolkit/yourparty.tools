@@ -1,14 +1,22 @@
 ---
 title: yourparty.tools
 description: A living toolkit, resource bank, and directory to help you organise.
-nav_title: Home
+nav_title: Your Party democracy toolkit
 updated: 2025-08-22
+navigation: false
 ---
 
 Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) democratically and instil a culture of solidarity and collective action.
 
-- 👉 [**Find your local**](/find-your-local/) — directory and map of formations.
-- 🧰 [**Organising toolkits**](/toolkits/) — how-tos, checklists, templates.
+::card-group
+  :::card{icon="lucide:map" title="Find your local" to="/find-your-local/"}
+  Directory and map of proto-branches.
+  :::
+
+  :::card{icon="lucide:tool-case" title="Organising guides" to="/guides/"}
+  How-tos, checklists, templates.
+  :::
+::
 
 ### Coming soon...
 
@@ -17,4 +25,4 @@ Welcome to **yourparty.tools** — a practical toolkit to help you build [Your P
 - 🗣️ **Debates** — primers & proposals.
 - ✉️ **Newsletter** — get updates.
 
-Got an idea for this toolkit? [Email info@yourparty.tools](mailto:info@yourparty.tools).
+Got an idea for this toolkit? [Email info@yourparty.tools](mailto\:info@yourparty.tools).

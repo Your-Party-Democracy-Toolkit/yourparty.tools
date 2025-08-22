@@ -3,11 +3,26 @@ title: Organising toolkits
 description: Practical guides for democratic, liberatory, struggle-oriented organising.
 nav_title: Toolkits
 updated: 2025-08-22
+icon: lucide:box
 ---
 
-Start with these core guides:
+You don't have to wait for anyone: grassroots democracy begins with you, from the bottom up.
 
-- [**Proto-branch toolkit**]() — roles, first meeting, decision-making, onboarding.
+People around the country are starting WhatsApp and Facebook group chats, arranging small meetings of friends, neighbours, and planning larger community assemblies.
+
+Here are some guides based on what others have been doing:
+
+::card-group
+  :::card
+  ---
+  icon: lucide:box
+  target: _blank
+  title: Proto-branch toolkit
+  to: https://docs.google.com/document/d/140PDgjsNPrpljV8TUCISyyl0RU2ejwi8i7AwWTkxuds/view?tab=t.0#heading=h.ohyvj6gnp42
+  ---
+  Roles, first meeting, decision-making, onboarding.
+  :::
+::
 
 ### Coming soon:
 
