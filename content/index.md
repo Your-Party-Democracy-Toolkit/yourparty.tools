@@ -7,8 +7,26 @@ updated: 2025-08-22
 
 Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) democratically and instil a culture of solidarity and collective action.
 
-- 👉 [**Find your local**](/find-your-local/) — directory and map of formations.
-- 🧰 [**Organising toolkits**](/toolkits/) — how-tos, checklists, templates.
+::card-group
+  ::card
+  ---
+  title: Find your local
+  to: /find-your-local/
+  target: _blank
+  icon: lucide:map
+  ---
+  Directory and map of proto-branches.
+  ::
+
+  ::card
+  ---
+  title: Organising guides
+  to: /guides/
+  icon: lucide:toolkit
+  ---
+  How-tos, checklists, templates.
+  ::
+::
 
 ### Coming soon...
 
@@ -17,4 +35,4 @@ Welcome to **yourparty.tools** — a practical toolkit to help you build [Your P
 - 🗣️ **Debates** — primers & proposals.
 - ✉️ **Newsletter** — get updates.
 
-Got an idea for this toolkit? [Email info@yourparty.tools](mailto:info@yourparty.tools).
+Got an idea for this toolkit? [Email info@yourparty.tools](mailto\:info@yourparty.tools).
