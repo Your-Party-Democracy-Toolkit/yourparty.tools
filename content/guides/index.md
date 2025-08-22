@@ -7,7 +7,7 @@ updated: 2025-08-22
 
 Start with these core guides:
 
-- [**Proto-branch toolkit**]() — roles, first meeting, decision-making, onboarding.
+- [**Proto-branch toolkit**](/) — roles, first meeting, decision-making, onboarding.
 
 ### Coming soon:
 
