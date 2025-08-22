@@ -6,13 +6,11 @@ updated: 2025-08-22
 icon: lucide:box
 ---
 
-### Grassroots activists are setting up local guides
-
-You don't have to wait for anyone: grassroots democracy begins with you, from the bottom up. Regardless of what decisions the career politicians make, for us it makes sense to find each other, start talking and think about how we want our own neighbourhoods and local economies to change for the radically better.
+You don't have to wait for anyone: grassroots democracy begins with you, from the bottom up.
 
 People around the country are starting WhatsApp and Facebook group chats, arranging small meetings of friends, neighbours, and planning larger community assemblies.
 
-Here are some guides to help:
+Here are some guides based on what others have been doing:
 
 ::card-group
   :::card
