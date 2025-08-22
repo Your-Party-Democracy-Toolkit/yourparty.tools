@@ -1,8 +1,8 @@
 export default defineAppConfig({
   shadcnDocs: {
     site: {
-      name: 'shadcn-docs-nuxt',
-      description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
+      name: 'Your Party democracy toolkit',
+      description: 'A toolkit to help you organise build democracy, solidarity and collective action in Your Party structures',
     },
     theme: {
       customizable: true,
@@ -10,7 +10,7 @@ export default defineAppConfig({
       radius: 0.5,
     },
     header: {
-      title: 'shadcn-docs-starter',
+      title: 'Your Party democracy toolkit',
       showTitle: true,
       darkModeToggle: true,
       languageSwitcher: {
@@ -19,18 +19,13 @@ export default defineAppConfig({
         dropdownType: 'select',
       },
       logo: {
-        light: '/logo.svg',
-        dark: '/logo-dark.svg',
+        light: '/android-chrome-512x512.png',
+        dark: '/android-chrome-512x512.png',
       },
       nav: [],
-      links: [{
-        icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
-      }],
     },
     aside: {
-      useLevel: true,
+      useLevel: false,
       collapse: false,
     },
     main: {
@@ -38,24 +33,24 @@ export default defineAppConfig({
       showTitle: true,
     },
     footer: {
-      credits: 'Copyright © 2024',
-      links: [{
-        icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
-      }],
+      credits: 'The Governance Design Working Group',
+      // links: [{
+      //   icon: 'lucide:github',
+      //   to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
+      //   target: '_blank',
+      // }],
     },
     toc: {
       enable: true,
       links: [{
-        title: 'Star on GitHub',
+        title: 'Sign up to Your Party',
         icon: 'lucide:star',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
+        to: 'https://www.yourparty.uk/',
         target: '_blank',
       }, {
-        title: 'Create Issues',
-        icon: 'lucide:circle-dot',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues',
+        title: 'Suggest an improvement',
+        icon: 'lucide:mail',
+        to: 'mailto:info@yourparty.tools',
         target: '_blank',
       }],
     },
