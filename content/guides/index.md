@@ -5,9 +5,17 @@ nav_title: Toolkits
 updated: 2025-08-22
 ---
 
-Start with these core guides:
-
-- [Proto-branch toolkit](https://docs.google.com/spreadsheets/d/1XlmtFKFj47QkXy6GmebIsmlTh5BPgt8VgiXkBdtnHNQ/edit?usp=sharing) — roles, first meeting, decision-making, onboarding.
+::card-group
+  ::card
+  ---
+  title: Proto-branch toolkit
+  icon: lucide:box
+  to: https://docs.google.com/spreadsheets/d/1XlmtFKFj47QkXy6GmebIsmlTh5BPgt8VgiXkBdtnHNQ/edit?usp=sharing
+  target: _blank
+  ---
+  Roles, first meeting, decision-making, onboarding.
+  ::
+::
 
 ### Coming soon:
 
