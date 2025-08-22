@@ -8,20 +8,15 @@ export default defineNuxtConfig({
       {
         code: 'en',
         name: 'English',
-        language: 'en-US',
+        language: 'en-GB',
       },
     ],
   },
   compatibilityDate: '2024-07-06',
   content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-    },
+    preview: { api: 'https://api.nuxt.studio' }
   },
-  app: {
-    head: {
-      title: 'Your Party democracy toolkit',
-      description: 'A toolkit to help you organise build democracy, solidarity and collective action in Your Party structures',
-    }
-  }
+  studio: {
+    enabled: true,
+  },
 })
