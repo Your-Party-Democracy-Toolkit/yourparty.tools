@@ -8,24 +8,13 @@ updated: 2025-08-22
 Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) democratically and instil a culture of solidarity and collective action.
 
 ::card-group
-  ::card
-  ---
-  title: Find your local
-  to: /find-your-local/
-  target: _blank
-  icon: lucide:map
-  ---
+  :::card{icon="lucide:map" title="Find your local" to="/find-your-local/"}
   Directory and map of proto-branches.
-  ::
+  :::
 
-  ::card
-  ---
-  title: Organising guides
-  to: /guides/
-  icon: lucide:toolkit
-  ---
+  :::card{icon="lucide:tool-case" title="Organising guides" to="/guides/"}
   How-tos, checklists, templates.
-  ::
+  :::
 ::
 
 ### Coming soon...
