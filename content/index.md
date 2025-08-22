@@ -12,7 +12,9 @@ Welcome to **yourparty.tools** — a practical toolkit to help you build [Your P
 
 ### Coming soon...
 
-- 📰 [**News & FAQs**](/news/) — what's happening and key questions.
-- 📝 [**Reports**](/reports/) — short write-ins from local organising.
-- 🗣️ [**Debates**](/debates/) — primers & proposals.
-- ✉️ [**Newsletter**](/newsletter/) — get updates.
+- 📰 **News & FAQs** — what's happening and key questions.
+- 📝 **Reports** — short write-ins from local organising.
+- 🗣️ **Debates** — primers & proposals.
+- ✉️ **Newsletter** — get updates.
+
+Got an idea for this toolkit? [Email info@yourparty.tools](mailto:info@yourparty.tools).
