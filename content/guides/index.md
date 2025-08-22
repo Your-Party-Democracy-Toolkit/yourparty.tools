@@ -3,18 +3,19 @@ title: Organising toolkits
 description: Practical guides for democratic, liberatory, struggle-oriented organising.
 nav_title: Toolkits
 updated: 2025-08-22
+icon: lucide:box
 ---
 
 ::card-group
-  ::card
+  :::card
   ---
-  title: Proto-branch toolkit
   icon: lucide:box
-  to: https://docs.google.com/spreadsheets/d/1XlmtFKFj47QkXy6GmebIsmlTh5BPgt8VgiXkBdtnHNQ/edit?usp=sharing
   target: _blank
+  title: Proto-branch toolkit
+  to: https://docs.google.com/spreadsheets/d/1XlmtFKFj47QkXy6GmebIsmlTh5BPgt8VgiXkBdtnHNQ/edit?usp=sharing
   ---
   Roles, first meeting, decision-making, onboarding.
-  ::
+  :::
 ::
 
 ### Coming soon:
