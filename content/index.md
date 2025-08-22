@@ -1,8 +1,9 @@
 ---
 title: yourparty.tools
 description: A living toolkit, resource bank, and directory to help you organise.
-nav_title: Home
+nav_title: Your Party democracy toolkit
 updated: 2025-08-22
+navigation: false
 ---
 
 Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) democratically and instil a culture of solidarity and collective action.
