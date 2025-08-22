@@ -57,6 +57,11 @@ export default defineAppConfig({
     search: {
       enable: true,
       inAside: false,
-    }
+    },
+    umami: {
+      enable: true,
+      src: 'https://cloud.umami.is/script.js',
+      dataWebsiteId: 'c01f3f26-4ec1-4ca8-9173-80304d429dc3',
+    },
   }
 });
