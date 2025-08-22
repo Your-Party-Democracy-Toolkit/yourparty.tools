@@ -18,4 +18,10 @@ export default defineNuxtConfig({
       api: 'https://api.nuxt.studio',
     },
   },
+  app: {
+    head: {
+      title: 'Your Party democracy toolkit',
+      description: 'A toolkit to help you organise build democracy, solidarity and collective action in Your Party structures',
+    }
+  }
 })
