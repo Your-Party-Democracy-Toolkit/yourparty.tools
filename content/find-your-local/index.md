@@ -12,6 +12,3 @@ If your group is missing or details are wrong, please [**submit an update**](mai
 ### Coming soon
 
 An interactive directory and map.
-
-::list-groups
-::

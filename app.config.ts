@@ -25,7 +25,7 @@ export default defineAppConfig({
       nav: [],
     },
     aside: {
-      useLevel: false,
+      useLevel: true,
       collapse: false,
     },
     main: {
