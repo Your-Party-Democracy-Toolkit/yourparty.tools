@@ -14,7 +14,7 @@ fullpage: true
 ::
 
 ::alert{type="info"}
-  Please send us Whatsapp group links, Facebook groups, or other links to your local branch and we will update this directory!
+  Please [send us](mailto:info@yourparty.tools) Whatsapp group links, Facebook groups, or other links to your local branch and we will update this directory!
 ::
 
 ::stack
