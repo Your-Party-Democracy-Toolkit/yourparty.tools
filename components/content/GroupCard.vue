@@ -4,7 +4,7 @@ const { g } = defineProps(['g'])
 
 <template>
   <div class="link">
-    <h4 class="font-medium">{{ g.name }} <span v-if="g.postcodeData?.region"> · {{ g.postcodeData?.region }}</span></h4>
+    <h4 class="font-medium">{{ g.name }}</h4>
     <p class="text-sm opacity-80">
       <span v-if="g.json" v-autolink>{{ g.json['Additional comments'] }}</span>
       <!-- Uniting principles or constituiton -->
