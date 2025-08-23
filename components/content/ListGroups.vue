@@ -1,7 +1,4 @@
 <script setup lang="ts">
-  import { ref, onMounted } from 'vue'
-  import mapboxgl from 'mapbox-gl'
-
   const { data } = await useFetch('/api/groups')
 
   const groupedGroups = computed(() => {
@@ -34,6 +31,20 @@
         group.scrollIntoView({ behavior: 'smooth' })
       }
     }
+  })
+
+
+  useMapbox('map', (map) => {
+    map.on('load', () => {
+      // on change of selectedGroup, scroll to that group in the list
+      watch(selectedGroup, (newVal: any) => {
+        if (newVal && newVal.postcodeData && newVal.postcodeData.longitude && newVal.postcodeData.latitude) {
+          map.flyTo({
+            center: [newVal.postcodeData.longitude, newVal.postcodeData.latitude],
+          })
+        }
+      })
+    })
   })
 </script>
 
