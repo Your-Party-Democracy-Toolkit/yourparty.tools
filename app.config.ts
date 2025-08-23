@@ -49,11 +49,17 @@ export default defineAppConfig({
     },
     footer: {
       credits: 'The Governance Design Working Group',
-      // links: [{
-      //   icon: 'lucide:github',
-      //   to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-      //   target: '_blank',
-      // }],
+      links: [{
+        title: 'Contact us',
+        icon: 'lucide:mail',
+        to: 'mailto:info@yourparty.tools',
+        target: '_blank',
+      }, {
+        title: 'Suggest an update',
+        icon: 'lucide:pencil',
+        to: 'mailto:info@yourparty.tools',
+        target: '_blank',
+      }],
     },
     toc: {
       enable: true,

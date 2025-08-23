@@ -13,6 +13,10 @@ fullpage: true
   This is a crowdsourced directory of known proto-branches, set up by grassroots activists. Help us keep it up to date and start your own!
 ::
 
+::alert{type="info"}
+  Please send us Whatsapp group links, Facebook groups, or other links to your local branch and we will update this directory!
+::
+
 ::stack
   ::div{class="p-3 flex gap-4"}
     ::button-link{right-icon="lucide:pencil" to="mailto:info@yourparty.tools"}
