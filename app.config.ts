@@ -22,7 +22,22 @@ export default defineAppConfig({
         light: '/android-chrome-512x512.png',
         dark: '/android-chrome-512x512.png',
       },
-      nav: [],
+      nav: [{
+        title: 'Find your local',
+        to: '/find-your-local',
+        target: '_self',
+        showLinkIcon: false,
+      }, {
+        title: 'Organising guides',
+        to: '/guides',
+        target: '_self',
+        showLinkIcon: false,
+      }, {
+        title: 'About',
+        to: '/about',
+        target: '_self',
+        showLinkIcon: false,
+      }],
     },
     aside: {
       useLevel: true,
