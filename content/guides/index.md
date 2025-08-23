@@ -1,22 +1,28 @@
 ---
-title: About yourparty.tools
-description: A living toolkit, resource bank, and directory to help you organise.
-nav_title: Your Party democracy toolkit
+title: Get started
+description: A practical guide for democratic, liberatory, struggle-oriented organising.
 updated: 2025-08-22
-icon: "lucide:info"
+icon: lucide:box
 ---
 
-Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) democratically and instil a culture of solidarity and collective action.
+Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) and instil a culture of [democracy](/principles/democracy), [solidarity](/principles/solidarity) and [collective action](/principles/collective-action).
+
+You don't have to wait for anyone: grassroots democracy begins with you, from the bottom up. People around the country are starting WhatsApp and Facebook group chats, arranging small meetings of friends, neighbours, and planning larger community assemblies.
+
+Start with this **Proto-Branch Toolkit**, then explore the sidebar for links to other guides.
 
 ::card-group
-  :::card{icon="lucide:map" title="Find your local" to="/find-your-local/"}
-  Directory and map of proto-branches.
-  :::
-
-  :::card{icon="lucide:tool-case" title="Organising guides" to="/guides/"}
-  How-tos, checklists, templates.
+  :::card
+  ---
+  icon: lucide:box
+  target: _blank
+  title: Proto-branch toolkit
+  to: https://docs.google.com/document/d/140PDgjsNPrpljV8TUCISyyl0RU2ejwi8i7AwWTkxuds/view?tab=t.0#heading=h.ohyvj6gnp42
+  ---
+  Roles, first meeting, decision-making, onboarding.
   :::
 ::
+
 
 ### Coming soon...
 
