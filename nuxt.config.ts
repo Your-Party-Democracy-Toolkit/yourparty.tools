@@ -1,8 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    }
+  },
   devtools: { enabled: true },
-  plugins: ['~/plugins/autolinkify-directive.client.ts'],
   extends: ['shadcn-docs-nuxt'],
+  modules: ['@nuxt/content','nuxt-mapbox'],
+  mapbox: {
+    accessToken: 'pk.eyJ1IjoiY29tbW9ua25vd2xlZGdlIiwiYSI6ImNtZW84MW56MDA3NHAya3F6aXEwMDd0MDUifQ.tujAvZh2HBN_NRPdlhwLzA'
+  },
   i18n: {
     defaultLocale: 'en',
     locales: [
@@ -13,11 +21,11 @@ export default defineNuxtConfig({
       },
     ],
   },
-  compatibilityDate: '2024-07-06',
-  content: {
-    preview: { api: 'https://api.nuxt.studio' }
-  },
   studio: {
     enabled: true,
   },
+  site: {
+    title: "Your Party democracy toolkit",
+    description: "For democratic, liberatory, struggle-oriented organising",
+  }
 })
