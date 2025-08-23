@@ -20,5 +20,5 @@ actions:
 Your Party :br Democracy Toolkit
 
 #description
-A living toolkit, resource bank, and directory to help you organise Your Party where you are, to be <ins>**maximally democratic**</ins>, in <ins>**solidarity with all oppressed people**</ins>, and focused on <ins>**members' collective action**</ins>.
+A living toolkit, resource bank and directory to help you organise Your Party locally. We're all in this together for [maximum democracy](/organising/principles/democracy), [solidarity with all oppressed people](/organising/principles/solidarity), and the radical power we can build through [collective action](/organising/principles/collective-action).
 ::
