@@ -12,12 +12,15 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",
+    "@unhead/vue": "^2.0.14",
     "autolinker": "^4.1.5",
     "better-sqlite3": "^12.2.0",
     "nuxt": "^3.17.6",
     "nuxt-mapbox": "^1.6.3",
+    "nuxt-og-image": "^5.1.9",
     "public-google-sheets-parser": "^1.5.4",
     "shadcn-docs-nuxt": "^1.1.1",
+    "unstorage": "^1.17.0",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },

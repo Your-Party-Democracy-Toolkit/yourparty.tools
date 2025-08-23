@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   extends: ['shadcn-docs-nuxt'],
-  modules: ['@nuxt/content','nuxt-mapbox'],
+  modules: ['@nuxt/content', 'nuxt-mapbox', 'nuxt-og-image'],
   mapbox: {
     accessToken: 'pk.eyJ1IjoiY29tbW9ua25vd2xlZGdlIiwiYSI6ImNtZW84MW56MDA3NHAya3F6aXEwMDd0MDUifQ.tujAvZh2HBN_NRPdlhwLzA'
   },
