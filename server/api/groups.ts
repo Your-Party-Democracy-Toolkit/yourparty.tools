@@ -15,8 +15,7 @@ export default defineEventHandler(async (event) => {
             name
             json
             postcodeData {
-              adminWard
-              region
+              region: europeanElectoralRegion
               latitude
               longitude
             }

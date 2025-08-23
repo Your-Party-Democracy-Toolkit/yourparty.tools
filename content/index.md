@@ -11,14 +11,10 @@ actions:
   - name: Find your local
     leftIcon: "lucide:map"
     to: /find-your-local
-  - name: Branch organising guides
+  - name: Organise!
     variant: outline
     leftIcon: "lucide:shapes"
     to: /guides
-  - name: About
-    variant: outline
-    leftIcon: "lucide:info"
-    to: /about
 ---
 
 #title

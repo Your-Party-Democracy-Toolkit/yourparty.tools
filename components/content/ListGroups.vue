@@ -51,6 +51,8 @@
           zoom: 5.5 // starting zoom
         }"
       >
+        <MapboxGeolocateControl position="top-left" />
+        <MapboxGeocoder ref="geocoderRef" />
         <template v-if="data && data?.length" v-for="g in data">
           <MapboxDefaultMarker
             v-if="g && g.id && g.postcodeData && g.postcodeData.longitude && g.postcodeData.latitude"
