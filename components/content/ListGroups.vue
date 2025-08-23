@@ -25,6 +25,16 @@
       selectedGroup.value = g
     }
   }
+
+  // on change of selectedGroup, scroll to that group in the list
+  watch(selectedGroup, (newVal) => {
+    if (newVal) {
+      const group = document.getElementById(`group-${newVal.id}`)
+      if (group) {
+        group.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  })
 </script>
 
 <template>
@@ -60,14 +70,6 @@
       </div>
     </div>
     <aside>
-      <div
-        v-if="selectedGroup"
-      >
-        <div class="text-sm opacity-50 mb-3 font-medium">🖤 Selected:</div>
-        <div class="rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4">
-          <GroupCard :g="selectedGroup" />
-        </div>
-      </div>
       <section>
         <main class="space-y-8">
           <section
@@ -80,7 +82,9 @@
               <article
                 v-for="g in gg.groups"
                 :key="g.id"
-                class="rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4"
+                class="scroll-mt-36 rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4"
+                :class="{ 'border-black border-2 [&_.link_a]:!text-red-600': selectedGroup && selectedGroup.id === g.id }"
+                :id="`group-${g.id}`"
               >
                 <GroupCard :g="g" />
               </article>
