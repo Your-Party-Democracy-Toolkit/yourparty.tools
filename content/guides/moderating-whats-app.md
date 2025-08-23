@@ -1,0 +1,20 @@
+---
+icon: i-lucide-smartphone
+navBadges:
+  - value: Coming soon
+    type: lime
+badges:
+  - value: Contribute to this WIP guide
+    to: mailto:info@yourparty.tools
+    target: _blank
+---
+
+# Online group chats
+
+Group chats on apps—such as WhatsApp, [Signal (the secure alternative)](https://signal.org/)—can be useful.
+
+However, when left unmoderated and unstructured, they can also be destructive to new organisations/groups, by generating as much drop-off as retention because of heavy traffic, irrelevant posting, intense conflict, and—in unfortunate but also unfortunately routine cases—bigoted, oppressive messaging.
+
+::alert{icon="i-lucide-info"}
+Coming soon: a guide to organising your proto-branch's WhatsApp group chat so that people can collectively act in good spirits.
+::
