@@ -1,13 +1,21 @@
 ---
-title: How you could structure a proto-branch in the interim
-nav_title: Branch structure
+title: Democratic deliberation beyond voting
+nav_title: Democratic processes
+description: Democracy is more than voting
 updated: 2025-08-22
 icon: lucide:clock
 ---
 
-Ahead of a formal organisation, there's a need for interim democratic structures that are good enough for now, safe enough to try, and help us get everyone involved and active.
+A radical democracy is one in which the decision-makers are the implementers. It is a constant process of deliberation and practice — sometimes people get on with thinking and doing themselves, and sometimes they gather together to discuss and decide. To the degree that this cycle is broken, democratic life has broken down.
 
-There are different approaches to this:
-- Elected organising committee with defined roles
-- Elected organising Committee -> working groups report back to organising committee
-- All-members' meeting assembly -> multiple working groups in the interim
+::alert{icon="lucide:info"}
+  Coming soon: a guide on how you can deliberate more effectively as a group.
+::
+
+## Handling conflict democratically
+
+[Reflections](https://notesfrombelow.org/article/video-game-worker-unions-and-revolution) from the IWGB Game Workers Union:
+
+> What happens when there is conflict in the union? What happens if people break our policies? What happens if people harass or mistreat others? These are things you hope people won’t do, but should expect to happen regardless. We’ve tried many different things with varying amounts of success, and responding to these types of things is not easy. We have a disciplinary committee made up of elected members which rotates once a year to handle the very few cases that happen.
+> One alternative, and a current project of mine, is to help mediate conflict between members and help them reach a joint way forward through whatever difficulties they’re experiencing. I would never have learned to do this had I not been a part of a group that tries to avoid discipline via authority and chooses instead to work through conflict where possible to come out even stronger on the other side. This is exactly the kind of experiment I think we need to build better worlds.
+> Anyone heavily involved in unions can tell you they can get messy. I’ve been through my fair share of conflict within the union, and each time was different shades of difficult, but also incredibly educational. What I’ve learned is to go in expecting certain meetings to be messy and that we will work through the mess to come out the other side stronger together. That’s not always possible, but in the vast majority of times our goals will eventually align everyone on what needs to be done. I often remind myself of Margaret Killjoy’s reminder to “Deescalate all conflict that isn’t with the enemy”, and our own members are not the main enemy we’re up against.

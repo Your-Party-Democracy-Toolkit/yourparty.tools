@@ -1,7 +1,7 @@
 ---
-title: Organising toolkits
+title: Proto-branch starter toolkit
 description: Practical guides for democratic, liberatory, struggle-oriented organising.
-nav_title: Toolkits
+nav_title: Starter toolkit
 updated: 2025-08-22
 icon: lucide:box
 ---

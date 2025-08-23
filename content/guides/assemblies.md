@@ -1,10 +1,16 @@
 ---
-title: 
-nav_title: Branch structure
+title: Organise a public assembly
+nav_title: Assemblies
 updated: 2025-08-22
 icon: lucide:clock
 ---
 
 Some proto-branches are organising assemblies to gather people, align folk, generate ideas and make plans.
 
-Guides coming soon!
+::alert{icon="lucide:info"}
+  Coming soon: a guide to running a Your Party local assembly based on experiences [from around the country](/find-your-local).
+::
+
+Some resources:
+- [A guide from Assemble](https://timetoassemble.org/jumpstart-democracy/)
+- [An example from Preston](https://m.facebook.com/story.php?story_fbid=10165909714503032&id=632293031)
