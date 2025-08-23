@@ -96,3 +96,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .link a, a.link {
+    @apply font-semibold underline underline-offset-4;
+  }
+}
