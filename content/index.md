@@ -13,7 +13,6 @@ actions:
     to: /find-your-local
   - name: Organise!
     variant: outline
-    leftIcon: "lucide:shapes"
     to: /guides
 ---
 
