@@ -58,7 +58,7 @@
       v-if="selectedGroup"
     >
       <div class="text-sm opacity-50 mb-3 font-medium">🖤 Selected:</div>
-      <div class="border rounded p-3">
+      <div class="rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4">
         <GroupCard :g="selectedGroup" />
       </div>
     </div>
@@ -67,7 +67,7 @@
         <h2 class="text-lg font-medium">Directory of proto-branches</h2>
       </header>
       <main class="space-y-3">
-        <div class="border rounded p-3" v-if="data && data?.length" v-for="g in data" :key="g.id" >
+        <div class="rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4" v-if="data && data?.length" v-for="g in data" :key="g.id" >
           <GroupCard :g="g" />
         </div>
       </main>
