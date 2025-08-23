@@ -2,34 +2,7 @@
   import { ref, onMounted } from 'vue'
   import mapboxgl from 'mapbox-gl'
 
-  const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoie1xuIFwiZXhwXCI6IFwiMjAzNS0wOC0yMS0xMC0yNS01Mi0rMDAwMFwiLFxuIFwib3JpZ0lhdFwiOiBcIjIwMjUtMDgtMjMtMTAtMjUtNTItKzAwMDBcIixcbiBcInVzZXJuYW1lXCI6IFwiamFuXCJcbn0ifQ.jTVn9e2H82VLVDayrqcBwnPXZMEfKDK9L4k1Jxgl9O8"
-  // const { data } = await useAsyncData('groups', async () => {
-    const request = await $fetch("https://api.mapped.commonknowledge.coop/graphql", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `JWT ${key}`
-      },
-      body: {
-        query: `
-          query {
-            genericDataByExternalDataSource(externalDataSourceId:"e3d5eb5c-4a44-478d-8799-054c7dad569f") {
-              id
-              name
-              json
-              postcodeData {
-                adminWard
-                region
-                latitude
-                longitude
-              }
-            }
-          }
-        `
-      }
-    })
-    const data = request.data.genericDataByExternalDataSource
-  // })
+  const { data } = await useFetch('/api/groups')
 
   const selectedGroup = useState('selectedGroup', () => null)
 
