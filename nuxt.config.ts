@@ -11,6 +11,22 @@ export default defineNuxtConfig({
   mapbox: {
     accessToken: 'pk.eyJ1IjoiY29tbW9ua25vd2xlZGdlIiwiYSI6ImNtZW84MW56MDA3NHAya3F6aXEwMDd0MDUifQ.tujAvZh2HBN_NRPdlhwLzA'
   },
+  app: {
+    head: {
+      script: [
+        ...(process.env.NODE_ENV === 'production'
+          ? [
+              { src: '/_vercel/insights/script.js', defer: true },
+              {
+                src: 'https://va.vercel-scripts.com/v1/script.js',
+                defer: true,
+                'data-domain': 'yourparty.tools'
+              }
+            ]
+          : [])
+      ]
+    }
+  },
   i18n: {
     defaultLocale: 'en',
     locales: [
@@ -20,9 +36,6 @@ export default defineNuxtConfig({
         language: 'en-GB',
       },
     ],
-  },
-  studio: {
-    enabled: true,
   },
   site: {
     title: "Your Party democracy toolkit",
