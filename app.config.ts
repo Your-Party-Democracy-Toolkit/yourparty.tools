@@ -32,11 +32,6 @@ export default defineAppConfig({
         to: '/guides',
         target: '_self',
         showLinkIcon: false,
-      }, {
-        title: 'About',
-        to: '/about',
-        target: '_self',
-        showLinkIcon: false,
       }],
     },
     aside: {
