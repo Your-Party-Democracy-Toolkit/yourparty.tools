@@ -82,9 +82,10 @@
               <article
                 v-for="g in gg.groups"
                 :key="g.id"
-                class="scroll-mt-36 rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4"
+                class="cursor-pointer scroll-mt-36 rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4"
                 :class="{ 'border-black border-2 [&_.link_a]:!text-red-600': selectedGroup && selectedGroup.id === g.id }"
                 :id="`group-${g.id}`"
+                @click="selectGroup(g)"
               >
                 <GroupCard :g="g" />
               </article>
