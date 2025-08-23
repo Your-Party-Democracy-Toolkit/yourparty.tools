@@ -20,7 +20,7 @@
     <div v-if="data == undefined || !data?.length" class="text-sm opacity-70">No groups loaded yet.</div>
     <MapboxMap
       map-id="map"
-      class="w-full max-h-screen h-[400px] rounded-lg border"
+      class="!relative w-full max-h-screen h-[400px] rounded-lg border"
       :options="{
         style: 'mapbox://styles/mapbox/light-v11', // style URL
         center: [-3.5, 54], // starting position
