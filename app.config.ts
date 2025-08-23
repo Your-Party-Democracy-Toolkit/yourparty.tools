@@ -45,7 +45,7 @@ export default defineAppConfig({
       showTitle: true,
     },
     footer: {
-      credits: 'The Governance Design Working Group',
+      credits: 'Started by members of the feminist, ecosocialist, anti-racist and anti-imperialist organisation [rs21](https://revsoc21.uk). Collaboration is welcome.',
       links: [{
         title: 'Contact us',
         icon: 'lucide:mail',
