@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxt/content": "^3.6.3",
     "autolinker": "^4.1.5",
+    "mapbox-gl": "^3.14.0",
     "nuxt": "^3.17.6",
     "public-google-sheets-parser": "^1.5.4",
     "shadcn-docs-nuxt": "^1.1.1",

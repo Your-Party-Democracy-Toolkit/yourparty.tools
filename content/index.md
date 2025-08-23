@@ -18,11 +18,26 @@ Welcome to **yourparty.tools** — a practical toolkit to help you build [Your P
   :::
 ::
 
+### Release 1: find people and get things going in your area
+
+#### Directory
+- [ ] Move the data to Airtable
+- [ ] Create a survey for updating the airtable (your contact deets, where this is about, what you wanna update us on to put on the website)
+- [ ] Directory / map
+- [ ] Request information on the site: WhatsApp group chat / Facebook group links and we'll put them here
+
+#### Turn the toolkit into pages
+- [ ] Running a public meeting
+- [ ] Key debates
+
+### Release 2: contributing a political debate
+- Primers and key debates
+
 ### Coming soon...
 
 - 📰 **News & FAQs** — what's happening and key questions.
 - 📝 **Reports** — short write-ins from local organising.
-- 🗣️ **Debates** — primers & proposals.
+- 🗣️ **Primers and key debates** — primers & proposals.
 - ✉️ **Newsletter** — get updates.
 
 Got an idea for this toolkit? [Email info@yourparty.tools](mailto\:info@yourparty.tools).

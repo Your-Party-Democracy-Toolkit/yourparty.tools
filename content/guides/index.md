@@ -10,7 +10,12 @@ You don't have to wait for anyone: grassroots democracy begins with you, from th
 
 People around the country are starting WhatsApp and Facebook group chats, arranging small meetings of friends, neighbours, and planning larger community assemblies.
 
-Here are some guides based on what others have been doing:
+We're looking for guides that promote Your Party structures that are
+- Maximally democratic
+- In solidarity with all oppressed groups
+- Oriented towards struggle and building counter-power
+
+We want to distinguish between guides and political debate/opinions.
 
 ::card-group
   :::card
