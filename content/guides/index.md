@@ -2,7 +2,7 @@
 title: Get started
 description: A practical guide for democratic, liberatory, struggle-oriented organising.
 updated: 2025-08-22
-icon: lucide:box
+icon: lucide:hand
 ---
 
 Welcome to **yourparty.tools** — a practical toolkit to help you build [Your Party](https://www.yourparty.uk/) and instil a culture of [democracy](/principles/democracy), [solidarity](/principles/solidarity) and [collective action](/principles/collective-action).

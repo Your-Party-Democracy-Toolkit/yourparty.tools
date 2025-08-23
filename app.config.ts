@@ -13,6 +13,7 @@ export default defineAppConfig({
       title: 'Your Party democracy toolkit',
       showTitle: true,
       darkModeToggle: true,
+      levelStyle: "header",
       languageSwitcher: {
         enable: false,
         triggerType: 'icon',
