@@ -13,7 +13,7 @@ actions:
     to: /find-your-local
   - name: Organise!
     variant: outline
-    to: /guides
+    to: /organising
 ---
 
 #title

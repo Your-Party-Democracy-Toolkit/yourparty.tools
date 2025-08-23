@@ -13,7 +13,6 @@ export default defineAppConfig({
       title: 'Your Party democracy toolkit',
       showTitle: true,
       darkModeToggle: true,
-      levelStyle: "header",
       languageSwitcher: {
         enable: false,
         triggerType: 'icon',
@@ -30,7 +29,7 @@ export default defineAppConfig({
         showLinkIcon: false,
       }, {
         title: 'Organising guides',
-        to: '/guides',
+        to: '/organising',
         target: '_self',
         showLinkIcon: false,
       }],
