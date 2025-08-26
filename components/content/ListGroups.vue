@@ -1,6 +1,8 @@
 <script setup lang="ts">
   const { data } = await useFetch('/api/groups')
 
+  const totalGroups = computed(() => data.value?.length || 0)
+
   const groupedGroups = computed(() => {
     return Object.entries(data.value?.reduce((acc: any, g: any) => {
       const region = g?.postcodeData?.region || "Other"
@@ -85,6 +87,11 @@
     <aside>
       <section>
         <main class="space-y-8">
+          <header class='mb-3'>
+            <h2 class="text-3xl font-medium">
+              <span class="focus:ring-ring inline-flex items-center border transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/80 border-transparent rounded-md px-1.5 py-0.5 font-normal leading-none">{{ totalGroups }}</span> proto-branches
+            </h2>
+          </header>
           <section
             v-if="data && data?.length"
             v-for="gg in groupedGroups"
