@@ -9,13 +9,12 @@ navigation: false
 ---
 actions:
   - name: Find your local
-    leftIcon: "lucide:map"
+    leftIcon: lucide:map
     to: /find-your-local
   - name: Organise!
     variant: outline
     to: /organising
 ---
-
 #title
 Your Party :br Democracy Toolkit
 
