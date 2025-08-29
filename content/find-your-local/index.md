@@ -14,7 +14,7 @@ fullpage: true
 ::
 
 ::alert{type="info"}
-  Please [send us](mailto:info@yourparty.tools) Whatsapp group links, Facebook groups, or other links to your local branch and we will update this directory!
+  Please [send us](mailto:info@yourparty.tools) Whatsapp group links, Facebook groups, other links and information about your local branch and we will update this directory!
 ::
 
 ::stack
@@ -30,4 +30,5 @@ fullpage: true
 
 <br />
 
+<!-- Pulls data from https://docs.google.com/spreadsheets/d/1XlmtFKFj47QkXy6GmebIsmlTh5BPgt8VgiXkBdtnHNQ/edit?gid=0#gid=0 -->
 <ListGroups />

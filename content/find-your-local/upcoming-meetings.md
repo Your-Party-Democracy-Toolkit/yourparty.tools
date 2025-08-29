@@ -1,5 +1,5 @@
 ---
-title: Key dates
+title: Dates & timelines
 description: What's happening, when, in Your Party?
 updated: 2025-08-22
 icon: lucide:calendar

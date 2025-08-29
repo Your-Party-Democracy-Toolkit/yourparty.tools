@@ -41,8 +41,15 @@ export default defineAppConfig({
       collapse: false,
     },
     main: {
-      breadCrumb: true,
+      breadCrumb: false,
       showTitle: true,
+      editLink: {
+        enable: true,
+        icon: 'lucide:mail',
+        placeholder: ['toc', 'docsFooter'],
+        pattern: 'mailto:info@yourparty.tools',
+        text: 'Suggest an improvement',
+      }
     },
     footer: {
       links: [{
