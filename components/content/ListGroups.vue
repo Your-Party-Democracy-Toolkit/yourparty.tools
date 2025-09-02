@@ -11,7 +11,7 @@
       return acc
     }, {})).map(([region, groups]) => ({
       region,
-      groups
+      groups: groups.sort((a: any, b: any) => a.name.localeCompare(b.name))
     })).sort((a: any, b: any) => a.region.localeCompare(b.region)).reverse()
   })
 
