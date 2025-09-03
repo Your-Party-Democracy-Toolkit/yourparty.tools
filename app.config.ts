@@ -5,7 +5,7 @@ export default defineAppConfig({
       description: 'A toolkit to help you organise build democracy, solidarity and collective action in Your Party structures',
       ogImageComponent: 'Custom',
       ogImageColor: 'light',
-      ogImage: "/og-image.png"
+      ogImage: "/og-image.jpg"
     },
     theme: {
       customizable: true,
