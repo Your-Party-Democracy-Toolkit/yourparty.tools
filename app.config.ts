@@ -3,8 +3,8 @@ export default defineAppConfig({
     site: {
       name: 'Your Party democracy toolkit',
       description: 'A toolkit to help you organise build democracy, solidarity and collective action in Your Party structures',
-      ogImageComponent: 'ShadcnDocs',
-      ogImageColor: 'light', // or 'dark'
+      ogImageComponent: 'SimpleBlog',
+      ogImageColor: 'light'
     },
     theme: {
       customizable: true,
