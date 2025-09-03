@@ -6,6 +6,7 @@ export default {
   prefix: '',
   content: [
     './content/**/*',
+    "./formkit.theme.ts"
   ],
   theme: {
     container: {
