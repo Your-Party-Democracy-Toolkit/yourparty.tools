@@ -1,12 +1,12 @@
 <template>
-  <div class="flex size-full items-start justify-start border-[12px] border-solid border-blue-500 bg-gray-50">
+  <div class="flex size-full items-start justify-start border-[12px] border-solid bg-gray-50">
     <div class="flex h-full items-start justify-start">
-      <div class="flex size-full flex-col justify-between">
-        <h1 class="p-20 text-left text-[80px] font-black">
+      <div class="flex size-full flex-col justify-between p-20 text-left  w-full">
+        <span class="text-3xl text-left font-bold w-full">❤️ Your Party democracy toolkit</span>
+        <h1 class="text-[80px] font-black  w-full">
           {{ title }}
         </h1>
-        <div>{{ description }}</div>
-        <div>❤️ Your Party democracy toolkit</div>
+        <div class="text-4xl font-semibold text-gray-500  w-full">{{ description }}</div>
       </div>
     </div>
   </div>
