@@ -34,11 +34,6 @@ export default defineAppConfig({
         to: '/organising',
         target: '_self',
         showLinkIcon: false,
-      }, {
-        title: 'Key debates',
-        to: '/info/key-debates',
-        target: '_self',
-        showLinkIcon: false,
       }],
     },
     aside: {
@@ -46,7 +41,6 @@ export default defineAppConfig({
       collapse: false,
     },
     main: {
-      breadCrumb: false,
       showTitle: true,
       editLink: {
         enable: true,
