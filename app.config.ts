@@ -74,7 +74,7 @@ export default defineAppConfig({
       }, {
         title: 'Suggest an improvement',
         icon: 'lucide:mail',
-        to: 'mailto:info@yourparty.tools',
+        to: '/suggest-an-improvement',
         target: '_blank',
       }],
     },
