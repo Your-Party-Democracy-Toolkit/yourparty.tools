@@ -14,12 +14,12 @@ fullpage: true
 ::
 
 ::alert{type="info"}
-  Please [send us](mailto:info@yourparty.tools) Whatsapp group links, Facebook groups, other links and information about your local branch and we will update this directory!
+  Please [send us](/suggest-an-improvement) Whatsapp group links, Facebook groups, other links and information about your local branch and we will update this directory!
 ::
 
 ::stack
   ::div{class="p-3 flex gap-4"}
-    ::button-link{right-icon="lucide:pencil" to="mailto:info@yourparty.tools"}
+    ::button-link{right-icon="lucide:pencil" to="/suggest-an-improvement"}
       Suggest an update
     ::
     ::button-link{right-icon="lucide:info" variant="outline" to="/organising"}

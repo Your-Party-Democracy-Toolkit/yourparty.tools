@@ -47,7 +47,7 @@ export default defineAppConfig({
         enable: true,
         icon: 'lucide:mail',
         placeholder: ['toc', 'docsFooter'],
-        pattern: 'mailto:info@yourparty.tools',
+        pattern: '/suggest-an-improvement',
         text: 'Suggest an improvement',
       }
     },
@@ -55,12 +55,12 @@ export default defineAppConfig({
       links: [{
         title: 'Contact us',
         icon: 'lucide:mail',
-        to: 'mailto:info@yourparty.tools',
+        to: '/suggest-an-improvement',
         target: '_blank',
       }, {
         title: 'Suggest an update',
         icon: 'lucide:pencil',
-        to: 'mailto:info@yourparty.tools',
+        to: '/suggest-an-improvement',
         target: '_blank',
       }],
     },
