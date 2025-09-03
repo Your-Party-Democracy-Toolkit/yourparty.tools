@@ -8,12 +8,12 @@ navigation: false
 ::hero
 ---
 actions:
+  - name: Read the guides
+    to: /organising
   - name: Find your local
     leftIcon: lucide:map
-    to: /find-your-local
-  - name: Organise!
     variant: outline
-    to: /organising
+    to: /find-your-local
 ---
 #title
 Your Party :br Democracy Toolkit
