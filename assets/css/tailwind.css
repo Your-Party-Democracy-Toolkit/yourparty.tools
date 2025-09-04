@@ -128,22 +128,31 @@
     opacity: 1;
   }
 
-  /* h1, h1 + span {
-    color: white
-  } */
+  h1 {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
 
   .text-muted-foreground {
     @apply !text-foreground opacity-70;
   }
 
   > div > div > section {
-    background-color: hsla(var(--background) / 70%);
-    backdrop-filter: blur(7px);
-    @apply rounded-xl p-8 pb-4 md:pb-2;
     max-width: 780px;
 
     @media (min-width: 1024px) {
-      margin-top: 150px;
+      margin-top: 120px;
+    }
+
+    h1 {
+      @apply !text-white;
+    }
+
+    h1 + span {
+      @apply rounded-xl px-8 py-6;
+      display: block;
+      background-color: hsla(var(--background) / 60%);
+      backdrop-filter: blur(7px);
+      opacity: 1 !important;
     }
   }
 }
