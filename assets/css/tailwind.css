@@ -111,3 +111,39 @@
     margin-top: 8px;
   }
 }
+
+.homepage.min-h-screen {
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    content: '';
+    background-image: url('https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/TATE/TATE/TATE_TATE_T07404_10-001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+  /* h1, h1 + span {
+    color: white
+  } */
+
+  .text-muted-foreground {
+    @apply !text-foreground opacity-70;
+  }
+
+  > div > div > section {
+    background-color: hsla(var(--background) / 70%);
+    backdrop-filter: blur(7px);
+    @apply rounded-xl p-8 pb-4 md:pb-2;
+    max-width: 780px;
+
+    @media (min-width: 1024px) {
+      margin-top: 150px;
+    }
+  }
+}
