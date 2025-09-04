@@ -5,7 +5,12 @@ export default defineAppConfig({
       description: 'A toolkit to help you organise build democracy, solidarity and collective action in Your Party structures',
       ogImageComponent: 'Custom',
       ogImageColor: 'light',
-      ogImage: "/og-image.jpg"
+      ogImage: "/og-image.jpg",
+      umami: {
+        enable: true,
+        src: 'https://cloud.umami.is/script.js',
+        dataWebsiteId: 'c01f3f26-4ec1-4ca8-9173-80304d429dc3',
+      },
     },
     theme: {
       customizable: true,
@@ -81,11 +86,6 @@ export default defineAppConfig({
     search: {
       enable: true,
       inAside: true,
-    },
-    umami: {
-      enable: true,
-      src: 'https://cloud.umami.is/script.js',
-      dataWebsiteId: 'c01f3f26-4ec1-4ca8-9173-80304d429dc3',
-    },
+    }
   }
 });
