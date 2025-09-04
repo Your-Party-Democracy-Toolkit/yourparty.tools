@@ -8,7 +8,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ['shadcn-docs-nuxt'],
   modules: [
-    'nuxt-component-meta',
     'nuxt-toast', '@formkit/nuxt', '@nuxt/content', 'nuxt-mapbox', 'nuxt-og-image', 'nuxt-toast'],
   mapbox: {
     accessToken: 'pk.eyJ1IjoiY29tbW9ua25vd2xlZGdlIiwiYSI6ImNtZW84MW56MDA3NHAya3F6aXEwMDd0MDUifQ.tujAvZh2HBN_NRPdlhwLzA'
