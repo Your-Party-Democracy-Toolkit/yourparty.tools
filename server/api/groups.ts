@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     body: {
       query: `
         query {
-          genericDataByExternalDataSource(externalDataSourceId:"e3d5eb5c-4a44-478d-8799-054c7dad569f") {
+          genericDataByExternalDataSource(externalDataSourceId:"ab02c662-b275-48ef-be1f-0e5bea51063d") {
             id
             name
             json
