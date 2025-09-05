@@ -7,6 +7,10 @@ navigation: false
 
 ::hero
 ---
+announcement:
+  title: '40 new groups!'
+  icon: 'lucide:party-popper'
+  to: /changelog
 actions:
   - name: Read the guides
     to: /organising
