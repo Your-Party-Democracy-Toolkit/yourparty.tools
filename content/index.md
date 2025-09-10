@@ -9,7 +9,7 @@ navigation: false
 ---
 announcement:
   title: 'Get the newsletter'
-  icon: 'lucide:mail'
+  icon: 'lucide:bell-dot'
   to: https://actionnetwork.org/forms/sign-up-to-hear-about-ways-to-get-involved-in-yourpartytools?source=direct_link&
 actions:
   - name: Read the guides

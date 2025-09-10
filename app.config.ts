@@ -69,8 +69,8 @@ export default defineAppConfig({
         target: '_blank',
       },
       {
-        title: 'Sign up to the newsletter',
-        icon: 'lucide:mail',
+        title: 'Subscribe to the newsletter',
+        icon: 'lucide:bell-dot',
         to: 'https://actionnetwork.org/forms/sign-up-to-hear-about-ways-to-get-involved-in-yourpartytools?source=direct_link&',
         target: '_blank',
       }
@@ -90,8 +90,8 @@ export default defineAppConfig({
         target: '_blank',
       },
       {
-        title: 'Sign up to the newsletter',
-        icon: 'lucide:mail',
+        title: 'Subscribe to the newsletter',
+        icon: 'lucide:bell-dot',
         to: 'https://actionnetwork.org/forms/sign-up-to-hear-about-ways-to-get-involved-in-yourpartytools?source=direct_link&',
         target: '_blank',
       }],
