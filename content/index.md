@@ -8,9 +8,9 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: '40 new groups!'
-  icon: 'lucide:party-popper'
-  to: /changelog
+  title: 'Get the newsletter'
+  icon: 'lucide:mail'
+  to: https://actionnetwork.org/forms/sign-up-to-hear-about-ways-to-get-involved-in-yourpartytools?source=direct_link&
 actions:
   - name: Read the guides
     to: /organising

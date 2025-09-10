@@ -67,7 +67,14 @@ export default defineAppConfig({
         icon: 'lucide:pencil',
         to: '/suggest-an-improvement',
         target: '_blank',
-      }],
+      },
+      {
+        title: 'Sign up to the newsletter',
+        icon: 'lucide:mail',
+        to: 'https://actionnetwork.org/forms/sign-up-to-hear-about-ways-to-get-involved-in-yourpartytools?source=direct_link&',
+        target: '_blank',
+      }
+    ],
     },
     toc: {
       enable: true,
@@ -80,6 +87,12 @@ export default defineAppConfig({
         title: 'Suggest an improvement',
         icon: 'lucide:mail',
         to: '/suggest-an-improvement',
+        target: '_blank',
+      },
+      {
+        title: 'Sign up to the newsletter',
+        icon: 'lucide:mail',
+        to: 'https://actionnetwork.org/forms/sign-up-to-hear-about-ways-to-get-involved-in-yourpartytools?source=direct_link&',
         target: '_blank',
       }],
     },
