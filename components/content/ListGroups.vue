@@ -2,20 +2,35 @@
   const { data } = await useFetch('/api/groups')
 
   const totalGroups = computed(() => data.value?.length || 0)
+  const searchQuery = ref('')
 
   const groupedGroups = computed(() => {
-    return Object.entries(data.value?.reduce((acc: any, g: any) => {
+    const grouped = data.value?.reduce((acc: any, g: any) => {
       const region = g?.postcodeData?.region || "Other"
       acc[region] = acc[region] || []
       acc[region].push(g)
       return acc
-    }, {})).map(([region, groups]) => ({
+    }, {}) || {}
+    
+    return Object.entries(grouped).map(([region, groups]) => ({
       region,
-      groups: groups.sort((a: any, b: any) => a.name.localeCompare(b.name))
+      groups: (groups as any[]).sort((a: any, b: any) => a.name.localeCompare(b.name))
     })).sort((a: any, b: any) => a.region.localeCompare(b.region)).reverse()
   })
 
-  const selectedGroup = useState('selectedGroup', () => null)
+  const filteredGroups = computed(() => {
+    if (!searchQuery.value.trim()) return []
+    
+    const query = searchQuery.value.toLowerCase()
+    return data.value?.filter((group: any) => 
+      group.name?.toLowerCase().includes(query) ||
+      group.description?.toLowerCase().includes(query) ||
+      group.postcodeData?.region?.toLowerCase().includes(query) ||
+      group.postcodeData?.postcode?.toLowerCase().includes(query)
+    ) || []
+  })
+
+  const selectedGroup = useState<any>('selectedGroup', () => null)
 
   function selectGroup(g: any) {
     if (selectedGroup.value && selectedGroup.value.id === g.id) {
@@ -91,7 +106,39 @@
             <h2 class="text-3xl font-medium">
               <span class="focus:ring-ring inline-flex items-center border transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/80 border-transparent rounded-md px-1.5 py-0.5 font-normal leading-none">{{ totalGroups }}</span> proto-branches
             </h2>
+            <div class="mt-4 relative">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <input
+                v-model="searchQuery"
+                type="text"
+                placeholder="Search branches..."
+                class="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
           </header>
+          
+          <!-- Search Results Section -->
+          <section v-if="searchQuery.trim() && filteredGroups.length > 0">
+            <h3 class="text-2xl font-medium mb-3">Search results</h3>
+            <div class="space-y-3">
+              <article
+                v-for="g in filteredGroups"
+                :key="g.id"
+                class="cursor-pointer scroll-mt-36 rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4"
+                :class="{ 'border-foreground border-2': selectedGroup && selectedGroup.id === g.id }"
+                :id="`group-${g.id}`"
+                @click="selectGroup(g)"
+              >
+                <GroupCard :g="g" />
+              </article>
+            </div>
+          </section>
+          
+          <!-- All Groups Section -->
           <section
             v-if="data && data?.length"
             v-for="gg in groupedGroups"
