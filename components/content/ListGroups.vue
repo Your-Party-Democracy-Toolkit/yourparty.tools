@@ -1,5 +1,18 @@
 <script setup lang="ts">
-  const { data } = await useFetch('/api/groups')
+  type Group = {
+    id: string
+    name: string
+    postcodeData: {
+      region: string
+      latitude: number
+      longitude: number
+    }
+    json: Record<string, any>
+  }
+
+  const { data } = await useFetch('/api/groups') as unknown as { data: { value: Group[] } }
+
+  const groups = data.value || []
 
   const totalGroups = computed(() => data.value?.length || 0)
   const searchQuery = ref('')
@@ -14,8 +27,8 @@
     
     return Object.entries(grouped).map(([region, groups]) => ({
       region,
-      groups: (groups as any[]).sort((a: any, b: any) => a.name.localeCompare(b.name))
-    })).sort((a: any, b: any) => a.region.localeCompare(b.region)).reverse()
+      groups: (groups as any[]).sort((a: any, b: any) => a.name?.localeCompare(b.name) || 0)
+    })).sort((a: any, b: any) => a.region?.localeCompare(b.region) || 0).reverse()
   })
 
   const filteredGroups = computed(() => {
@@ -66,7 +79,7 @@
 </script>
 
 <template>
-  <div v-if="data == undefined || !data?.length" class="text-sm opacity-70">No groups loaded yet.</div>
+  <div v-if="groups == undefined || !groups?.length" class="text-sm opacity-70">No groups loaded yet.</div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
     <div class='w-full min-h-[200px]'>
       <div class='sticky top-0 max-h-full min-h-[200px] h-[400px] md:h-screen'>
@@ -76,12 +89,13 @@
         :options="{
           style: 'mapbox://styles/mapbox/light-v11', // style URL
           center: [-3, 53.5], // starting position
-          zoom: 5.5 // starting zoom
+          zoom: 5.5, // starting zoom
         }"
       >
         <MapboxGeolocateControl position="top-left" />
+        <MapboxNavigationControl position="top-left" />
         <MapboxGeocoder ref="geocoderRef" />
-        <template v-if="data && data?.length" v-for="g in data">
+        <template v-if="groups && groups?.length" v-for="g in groups">
           <MapboxDefaultMarker
             v-if="g && g.id && g.postcodeData && g.postcodeData.longitude && g.postcodeData.latitude"
             :key="g.id"
@@ -140,7 +154,7 @@
           
           <!-- All Groups Section -->
           <section
-            v-if="data && data?.length"
+            v-if="groups && groups?.length"
             v-for="gg in groupedGroups"
             :key="gg.region"
           >
