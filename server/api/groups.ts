@@ -14,7 +14,7 @@ export default defineEventHandler(async (event) => {
   // Create basic auth header
   const credentials = Buffer.from(`${username}:${password}`).toString('base64')
 
-  const request = await $fetch("https://mapped.tools/api/rest/data-sources/f8aec68c-d025-4579-9b87-2d2eda0f8cf5/geojson?all=true", {
+  const request = await $fetch(`https://mapped.tools/api/rest/data-sources/${process.env.MAPPED_API_DATASOURCE_ID}/geojson?all=true`, {
     method: "GET",
     headers: {
       "Authorization": `Basic ${credentials}`
