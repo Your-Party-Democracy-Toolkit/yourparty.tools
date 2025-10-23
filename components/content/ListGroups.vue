@@ -1,14 +1,10 @@
 <script setup lang="ts">
-  type Group = {
+  type Group = GeoJSON.Feature<GeoJSON.Point, 
+  {
     id: string
     name: string
-    postcodeData: {
-      region: string
-      latitude: number
-      longitude: number
-    }
-    json: Record<string, any>
-  }
+    region: string
+  }>
 
   const { data } = await useFetch('/api/groups') as unknown as { data: { value: Group[] } }
 
@@ -18,17 +14,17 @@
   const searchQuery = ref('')
 
   const groupedGroups = computed(() => {
-    const grouped = data.value?.reduce((acc: any, g: any) => {
-      const region = g?.postcodeData?.region || "Other"
+    const grouped = data.value?.reduce((acc, g) => {
+      const region = g?.properties.region || "Other"
       acc[region] = acc[region] || []
       acc[region].push(g)
       return acc
-    }, {}) || {}
+    }, {} as Record<string, Group[]>) || {}
     
     return Object.entries(grouped).map(([region, groups]) => ({
       region,
-      groups: (groups as any[]).sort((a: any, b: any) => a.name?.localeCompare(b.name) || 0)
-    })).sort((a: any, b: any) => a.region?.localeCompare(b.region) || 0).reverse()
+      groups: groups.sort((a, b) => a.properties.name?.localeCompare(b.properties.name || '') || 0)
+    })).sort((a, b) => a.region?.localeCompare(b.region) || 0).reverse()
   })
 
   const filteredGroups = computed(() => {
@@ -36,10 +32,9 @@
     
     const query = searchQuery.value.toLowerCase()
     return data.value?.filter((group: any) => 
-      group.name?.toLowerCase().includes(query) ||
-      group.description?.toLowerCase().includes(query) ||
-      group.postcodeData?.region?.toLowerCase().includes(query) ||
-      group.postcodeData?.postcode?.toLowerCase().includes(query)
+      group.properties.name?.toLowerCase().includes(query) ||
+      group.properties.description?.toLowerCase().includes(query) ||
+      group.properties.region?.toLowerCase().includes(query)
     ) || []
   })
 
@@ -97,10 +92,10 @@
         <MapboxGeocoder ref="geocoderRef" />
         <template v-if="groups && groups?.length" v-for="g in groups">
           <MapboxDefaultMarker
-            v-if="g && g.id && g.postcodeData && g.postcodeData.longitude && g.postcodeData.latitude"
+            v-if="g && g.id && g.geometry.coordinates && g.geometry.coordinates[0] && g.geometry.coordinates[1]"
             :key="g.id"
-            :marker-id="g.id"
-            :lnglat="[g.postcodeData.longitude, g.postcodeData.latitude]"
+            :marker-id="g.properties.id"
+            :lnglat="[g.geometry.coordinates[0], g.geometry.coordinates[1]]"
           >
             <template #marker>
               <div @click="selectGroup(g)">
@@ -162,7 +157,7 @@
             <div class="space-y-3">
               <article
                 v-for="g in gg.groups"
-                :key="g.id"
+                :key="g.properties.id"
                 class="cursor-pointer scroll-mt-36 rounded-lg border bg-card text-card-foreground shadow-xs relative h-full overflow-hidden transition-all hover:bg-muted p-4"
                 :class="{ 'border-foreground border-2': selectedGroup && selectedGroup.id === g.id }"
                 :id="`group-${g.id}`"
