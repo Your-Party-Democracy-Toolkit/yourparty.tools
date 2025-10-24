@@ -1,6 +1,6 @@
 ---
-title: Founding documents
-description: A visual guide to the party founding documents.
+title: A visual guide to the Your Party founding documents
+description: How Jeremy Corbyn's leadership team is proposing to structure the party.
 nav_title: Founding documents
 updated: 2025-08-22
 icon: lucide:book
@@ -35,4 +35,8 @@ fullpage: true
 
 <br />
 
-<iframe src="https://miro.com/app/board/uXjVJ2KuklA=/" style="width: 100%; height: 80vh; border: 3px solid black; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);" border="0"></iframe>
+<iframe src="/founding-documents-diagram.pdf" style="width: 100%; height: 80vh; border: 3px solid black; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);" border="0"></iframe>
+
+::alert{type="info"}
+  For the latest changes, check out [this file](https://miro.com/app/board/uXjVJ2KuklA=/).
+::
