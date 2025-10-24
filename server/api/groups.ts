@@ -1,4 +1,4 @@
-import merge from "lodash/merge"
+import {merge} from "lodash-es"
 
 export default defineEventHandler(async (event) => {
   const username = process.env.MAPPED_API_USER
