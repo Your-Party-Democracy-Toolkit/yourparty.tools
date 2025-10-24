@@ -40,6 +40,11 @@ export default defineAppConfig({
         to: '/organising',
         target: '_self',
         showLinkIcon: false,
+      }, {
+        title: 'Founding documents',
+        to: '/founding-documents',
+        target: '_self',
+        showLinkIcon: false,
       }],
     },
     aside: {

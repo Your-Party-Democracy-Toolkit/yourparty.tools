@@ -18,6 +18,10 @@ actions:
     leftIcon: lucide:map
     variant: outline
     to: /find-your-local
+  - name: Founding documents
+    leftIcon: lucide:book
+    variant: outline
+    to: /founding-documents
 ---
 #title
 Your Party :br Democracy Toolkit
